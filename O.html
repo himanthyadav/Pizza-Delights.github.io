@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: whitesmoke;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      max-width: 900px;
+      margin: 20px;
+      overflow: hidden;
+    }
+    .left {
+      background-color: crimson;
+      color: white;
+      padding: 40px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .left h1 {
+      margin-bottom: 20px;
+    }
+    .left p {
+      margin: 10px 0;
+    }
+    .contac-us {
+      margin-top: 20px;
+    }
+    .contact-us a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.5em;
+    }
+    .right {
+      padding: 40px;
+      width: 50%;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid whitesmoke;
+      border-radius: 5px;
+    }
+    .form-group textarea {
+      resize: none;
+    }
+    .submit-btn {
+      background-color: crimson;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .submit-btn:hover {
+      background-color: dark orangered;
+    }
+    .copyright {
+  padding: 20px;
+  text-align: center;
+  align-items: end;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Let's Get In Touch</h1>
+      <p>Connect with us:</p>
+      <div class="contact-us">
+        Email -pizzadelights@gmail.com <br><br>
+        Phone No - 999-999-9999
+      </div>
+    </div>
+    <div class="right">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required 
+placeholder="
+Pizza Name - 
+Beverages  - 
+Quantity -"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  
+  <div class="copyright">
+    <p>&#169; All Rights Reserved By Pizza Delights.</p>
+</div>
+</body>
+</html>
+
+
